@@ -11,6 +11,28 @@ For all other values of n, print “Better luck next time.
 # include <iostream>
 using namespace std;
 
+string Prize(int n){
+    string prize;
+    if(n >= 300 && n <= 460){
+        prize = "MacBook";
+    }else if(n >= 200 && n <= 280){
+        prize = "Kurkure";
+    }else if(n >= 1100 && n <= 1500){
+        prize = "Cycle";
+    }else if(n >= 50 && n <= 80){
+        prize = "Bike";
+    }else{
+        prize = "Better luck next time.";
+    }
+    return prize;
+}
+
 int main(){
-    
+    int n;
+    cout<<"Enter number :";
+    cin>>n;
+
+    cout<<Prize(n)<<endl;
+
+    return 0;
 }

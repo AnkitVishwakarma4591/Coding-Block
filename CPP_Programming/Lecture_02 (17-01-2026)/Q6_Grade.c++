@@ -21,7 +21,7 @@ string Grade(int marks){
 
 int main(){
     int marks;
-    cout<<"Enter Marks";
+    cout<<"Enter Marks :";
     cin>>marks;
 
     cout<<Grade(marks)<<endl;
