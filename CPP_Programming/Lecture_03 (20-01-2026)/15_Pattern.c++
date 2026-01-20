@@ -1,9 +1,13 @@
 /*
-*  *  *  *  * 
-     *  *  *  *
-         *  *  *
-             *  *
-                 *
+ *  *  *  *  * 
+       *  *  *  *
+             *  *  *
+                   *  *
+                         * 
+                   *  *
+             *  *  *
+       *  *  *  *
+ *  *  *  *  *
 */
 
 # include <iostream>
@@ -13,7 +17,7 @@ void Pattern(int n){
     // first part
     for(int i = 0 ; i < n ; i++){
         for(int j = 0 ; j < 2*i ; j++){
-            cout<<"  ";
+            cout<<"   ";
         }
         for(int j = 0 ; j < n - i ; j++){
             cout<<" * ";
@@ -21,10 +25,14 @@ void Pattern(int n){
         cout<<endl;
     }
     // second part
-    for(int i = 2 ; i >= 1 ; i--){
-        for(int j = 1 ; j <= 2*n ; j++){
-
+    for(int i = 2 ; i <= n ; i++){
+        for(int j = 1 ; j <= 2*n-i-i ; j++){
+            cout<<"   ";
         }
+        for(int j = 1 ; j <= i ; j++){
+            cout<<" * ";
+        }
+        cout<<endl;
     }
 }
 
