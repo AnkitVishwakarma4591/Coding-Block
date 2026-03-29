@@ -38,6 +38,7 @@ int getDistance(vector<int> &arr, int N, int C){
 
 }
 
+
 int main(){
     int N, C;
 	cin>>N>>C;
